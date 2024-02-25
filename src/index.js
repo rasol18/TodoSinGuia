@@ -19,10 +19,9 @@ inputTodo.addEventListener('keyup',(event) => {
   let newArray
   if(event.key === "Enter") {
     event.preventDefault();
-    console.log(createTodo(inputTodo.value))
+    console.log('hice clic')
     inputTodo.value='';
     newArray =[...getLocalStorageTodoList(), ...todoList]
-    console.log('new' + newArray)
     setLocalStorageTodoList (newArray)
     getLocalStorageTodoList()
     const htmlTodo = `
